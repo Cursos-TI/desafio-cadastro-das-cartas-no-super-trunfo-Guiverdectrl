@@ -93,8 +93,8 @@ int main() {
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    
     //usei o comando print para listar em ordem todos os dados digitados pelo usuário, coloquei os com especificações iguais juntos para organizar.
 
     printf("Carta 01: \n");
