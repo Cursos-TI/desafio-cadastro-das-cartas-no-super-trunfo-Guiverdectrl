@@ -5,26 +5,15 @@ int main(){
     //Primeiro criei as variáveis
     //Usei o char[] para os textos, o int para  números inteiros e o float para números flutuantes.
     //Estabeleci uma quantidade de caracteres em cada char para ser possível digitar mais livrimente.
-    char Estado1;
-    char Codigo1[4];
-    char Cidade1[50];
-    unsigned long int População1;
-    float Area1;
-    float Pib1;
-    int Pontos1;
-    float Densidade1, Pibpercapita1, inversodensidade1, Superpoder1;
-
-    //carta 2
-    // Repeti o mesmo processo da carta 1.
-    char Estado2;
-    char Codigo2[4];
-    char Cidade2[50];
-    unsigned long int População2;
-    float Area2;
-    float Pib2;
-    int Pontos2; 
-    float Densidade2, Pibpercapita2, inversodensidade2, Superpoder2;
-
+    char Estado1, Estado2;
+    char Codigo1[4],  Codigo2[4];
+    char Cidade1[30], Cidade2[30];
+    unsigned long int População1, População2;
+    float Area1, Area2;
+    float Pib1, Pib2;
+    int Pontos1, Pontos2;
+    float Densidade1, Pibpercapita1, Superpoder1, 
+    Densidade2, Pibpercapita2, Superpoder2;
 
     // Usei o printf para imprimir as variáveis e o scanf para que seja possível digitar no terminal, ou seja, para dar valor as variáveis.
     printf("Desafio super Trunfo! \n\n");
@@ -133,8 +122,6 @@ int main(){
 
     Pibpercapita2 = (Pib2 * 1000000000) / População2;
     printf("Pib per capita: %.2f reais\n", Pibpercapita2);
-
-    inversodensidade2 = (float)Area2 / População2;
 
     //para calcular o superpoder somei população + area + Pib + pontosturisticos + 1/densidade (o inverso da densidade).
     //resultando assim no superpoder
